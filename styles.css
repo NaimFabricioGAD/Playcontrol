@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #c9c9c9;
+}
+
+/* ------------ HEADER / MENU SUPERIOR ------------ */
+
+.topheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #bbb7b7;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 105px;
+  z-index: 10;
+  justify-content: space-between;
+}
+
+.logo img {
+  display: block;
+}
+
+/* menú horizontal */
+.Menu-horizontal {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 34;
+  flex: 1;
+  gap: 60px;
+}
+
+.Menu-horizontal li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+/* botones del menú */
+.Menu-horizontal button {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.Menu-horizontal button:first-of-type {
+  margin-left: auto;
+}
+
+.Menu-horizontal button:nth-child(5) {
+  background-color: #7b2bcb;
+  color: white;
+}
+
+.Menu-horizontal button:nth-child(6) {
+  background-color: #70d843;
+  color: white;
+}
+
+/* ------------ SECCIÓN BIENVENIDA ------------ */
+
+.seccion-bienvenida {
+  margin-top: 80px;
+  background: linear-gradient(to bottom, #3ee35b, #1b0f6b);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  color: white;
+}
+.div-bienvenida-imagen img {
+  display: block;
+  transform: translateY(30px) translateX(-30px);
+}
+
+.div-bienvenida-imagen img {
+  display: block;
+}
+
+.div-gral-bienvenida {
+  text-align: center;
+}
+
+.div-gral-bienvenida h1 {
+  font-size: 96px;
+  margin: 10px 0;
+}
+
+.div-gral-bienvenida h3 {
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.div-bienvenida-imagen2 img {
+  display: block;
+  transform: translateY(150px);
+}
+
+/* ------------ SECCIÓN PREGUNTAS ------------ */
+
+.seccion-preguntas {
+  background-color: #ffffff;
+  padding: 40px 60px 20px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columna {
+  width: 32%;
+  text-align: center;
+}
+
+.columna h3 {
+  font-size: 24x;
+  margin-bottom: 15px;
+}
+
+.columna p {
+  font-size: 18px;
+  line-height: 1.3;
+}
+.columna-derecha {
+  padding-top: 200px;
+}
+
+.avatar img {
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.img-centro-contenedor img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  display: block;
+  margin: 25px auto 0 auto;
+}
+
+/* ------------ SECCIÓN DESCARGA ------------ */
+
+.seccion-descarga {
+  background-color: #ffffff;
+  padding: 10px 60px 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.luchador-container img {
+  display: block;
+  margin-top: 20px;
+}
+
+.icono-invader img {
+  display: block;
+  transform: translateY(-150px) translateX(-100px);
+}
+
+.div-gral-descarga {
+  text-align: center;
+}
+
+.div-gral-descarga h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* Botones de Google Play y App Store */
+.botones-descarga {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Imágenes de Google Play y App Store */
+.store-btn {
+  width: 160px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* ------------ FOOTER ------------ */
+/* Footer general */
+.footer {
+  background-color: #222; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
