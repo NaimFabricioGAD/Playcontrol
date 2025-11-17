@@ -2,7 +2,7 @@
   "name": "html-css",
   "version": "1.0.0",
   "description": "A template for HTML and CSS",
-  "main": "public/assets/index.html",
+  "main": "public/index.html",
   "scripts": {
     "start": "serve"
   },
