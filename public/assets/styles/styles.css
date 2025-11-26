@@ -267,3 +267,121 @@ body {
     margin-bottom: 0.5rem;
   }
 }
+
+/* ----- PÁGINAS DE AUTENTICACIÓN (login / register) ----- */
+
+.auth-body {
+    background: linear-gradient(135deg, #0c1544, #0c8f7b);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.auth-card {
+    background-color: #ffffff;
+    max-width: 420px;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.auth-card h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.auth-subtitle {
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #0c8f7b;
+    box-shadow: 0 0 0 2px rgba(12, 143, 123, 0.25);
+}
+
+.auth-error {
+    min-height: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #c0392b;
+    font-size: 0.85rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #0c8f7b;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0a6d60;
+}
+
+.btn-login,
+.btn-signup {
+    margin-left: 0.5rem;
+    padding: 0.4rem 1rem;
+    background-color: #0c8f7b;
+    color: #fff;
+}
+
+.btn-signup {
+    background-color: #8e44ad;
+}
+
+.btn-login:hover {
+    background-color: #0a6d60;
+}
+
+.btn-signup:hover {
+    background-color: #6c3483;
+}
+
+.auth-helper {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.auth-helper a {
+    color: #0c8f7b;
+    font-weight: 600;
+}
