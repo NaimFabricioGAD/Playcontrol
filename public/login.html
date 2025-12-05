@@ -2,64 +2,48 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PlayControl – Iniciar sesión</title>
+    <title>PlayControl - Login</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
 </head>
 <body class="auth-body">
 <nav class="topheader">
     <a href="index.html" class="logo">
-        <img height="80" width="180" src="./assets/Imagenes/logo.png" alt="PlayControl logo" />
+        <img height="70" width="150" src="./assets/Imagenes/logo.png" alt="PlayControl" />
     </a>
     <ul class="Menu-horizontal">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="index.html#about">¿Quiénes Somos?</a></li>
-        <li><a href="index.html#support">Soporte</a></li>
-        <li><a href="index.html#contact">Contactos</a></li>
+        <li><a href="register.html" class="btn btn-signup">Registrarse</a></li>
     </ul>
 </nav>
 
-<main class="auth-container">
-    <section class="auth-card">
+<section class="auth-container">
+    <div class="auth-card">
         <h1>Iniciar sesión</h1>
         <p class="auth-subtitle">
-            Ingresa para controlar tus hábitos de juego con PlayControl.
+            Ingresa con tu correo o nombre de usuario y contraseña.
         </p>
 
-        <form id="loginForm" class="auth-form" novalidate>
-            <label for="loginEmail">Correo electrónico</label>
-            <input
-                    type="email"
-                    id="loginEmail"
-                    name="email"
-                    placeholder="tucorreo@ejemplo.com"
-                    required
-            />
+        <form id="loginForm" class="auth-form">
+            <label for="loginId">Correo o usuario</label>
+            <input type="text" id="loginId" required />
 
             <label for="loginPassword">Contraseña</label>
-            <input
-                    type="password"
-                    id="loginPassword"
-                    name="password"
-                    placeholder="••••••••"
-                    minlength="6"
-                    required
-            />
+            <input type="password" id="loginPassword" required />
 
-            <p id="loginError" class="auth-error" aria-live="polite"></p>
+            <div id="loginError" class="auth-error"></div>
 
             <button type="submit" class="btn btn-primary">
-                Iniciar sesión
+                Entrar
             </button>
-
-            <p class="auth-helper">
-                ¿No tienes cuenta?
-                <a href="register.html">Crea una cuenta</a>
-            </p>
         </form>
-    </section>
-</main>
+
+        <div class="auth-helper">
+            ¿No tienes cuenta?
+            <a href="register.html">Crea una aquí</a>
+        </div>
+    </div>
+</section>
 
 <script src="./assets/scripts/main.js"></script>
 </body>

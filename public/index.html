@@ -15,16 +15,16 @@
           <img height="110" width="240" src="./assets/Imagenes/logo.png" />
       </a>
         <ul class="Menu-horizontal">
-            <li><a href="">Inicio</a></li>
-            <li><a href="">¿Quienes Somos?</a></li>
-            <li><a href="">Soporte</a></li>
-            <li><a href="">Contactos</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">¿Quienes Somos?</a></li>
+            <li><a href="#soporte">Soporte</a></li>
+            <li><a href="#contactos">Contactos</a></li>
             <li><a href="login.html" class="btn btn-login">Iniciar sesión</a></li>
             <li><a href="register.html" class="btn btn-signup">Registrarse</a></li>
         </ul>
     </nav>
     <!--Seccion topheader-bienvenida-->
-    <section class="seccion-bienvenida">
+    <section id="inicio" class="seccion-bienvenida">
         <div class="div-bienvenida-imagen">
             <img src="./assets/Imagenes/soldado.png" height="314" width="314" />
         </div>
@@ -40,7 +40,7 @@
     </section>
 
     <!--Seccion Preguntas-->
-    <section class="seccion-preguntas">
+    <section id="quienes-somos" class="seccion-preguntas">
       <!-- COLUMNA IZQUIERDA -->
       <div class="columna columna-izquierda">
         <div class="avatar">
@@ -85,22 +85,56 @@
     </section>
 
     <!--Seccion de descarga-->
-    <section class="seccion-descarga">
-         <div class="luchador-container">
-             <img src="./assets/Imagenes/image%209.png" width="279" height="341" />
-      </div>
-      <div class="div-gral-descarga">
-        <h4>Descarga PlayControl</h4>
-        <div class="botones-descarga">
-            <img src="./assets/Imagenes/googleplay.png" class="store-btn" />
-            <img src="./assets/Imagenes/appstore.png" class="store-btn" />
+    <section id="descarga" class="seccion-descarga">
+        <div class="luchador-container">
+            <img src="./assets/Imagenes/image%209.png" width="279" height="341" />
         </div>
-      </div>
-      <div class="icono-invader">
-          <img src="./assets/Imagenes/image%208.png" height="324" width="324" />
+        <div class="div-gral-descarga">
+            <h4>Descarga PlayControl</h4>
+            <div class="botones-descarga">
+                <img src="./assets/Imagenes/googleplay.png" class="store-btn" />
+                <img src="./assets/Imagenes/appstore.png" class="store-btn" />
+            </div>
         </div>
-      </div>
+        <div class="icono-invader">
+            <img src="./assets/Imagenes/image%208.png" height="324" width="324" />
+        </div>
     </section>
+<!-- SECCION CONTACTOS-->
+    <section id="contactos" class="seccion-contactos">
+        <h2>Contactos</h2>
+        <p>
+            ¿Tienes dudas sobre PlayControl o quieres saber más del proyecto?
+            Déjanos tus datos y te escribimos.
+        </p>
+
+        <form class="contact-form">
+            <label for="contact-name">Nombre completo</label>
+            <input id="contact-name" type="text" placeholder="Tu nombre" required />
+
+            <label for="contact-email">Correo electrónico</label>
+            <input id="contact-email" type="email" placeholder="tu@correo.com" required />
+
+            <label for="contact-message">Mensaje</label>
+            <textarea id="contact-message" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- SECCION SOPORTE (Números y correo) -->
+    <section id="soporte" class="seccion-soporte">
+        <h2><strong>Contacto</strong></h2>
+
+        <p><strong>Números:</strong></p>
+        <ul>
+            <li>950195211</li>
+            <li>998876541</li>
+        </ul>
+
+        <p><strong>Correo de contacto:</strong> playcontrol@gmail.com</p>
+    </section>
+
      <!-- PIE DE PAGINA -->
     <section id="footer">
       <footer class="footer">

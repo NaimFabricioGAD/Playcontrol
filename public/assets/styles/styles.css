@@ -275,6 +275,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 120px;
 }
 
 .auth-container {
@@ -367,7 +368,6 @@ body {
     color: #fff;
 }
 
-
 .topheader .btn-login {
     margin-left: auto;
     background-color: #7b2bcb;
@@ -394,4 +394,75 @@ body {
 .auth-helper a {
     color: #0c8f7b;
     font-weight: 600;
+}
+
+
+/* SECCION CONTACTANOS*/
+.seccion-contactos {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-contactos h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.seccion-contactos p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto 30px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/*soporte */
+.seccion-soporte {
+    background-color: #ffffff;
+    padding: 30px 20px 50px 20px;
+    text-align: center;
+}
+
+.seccion-soporte h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.seccion-soporte p {
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+.seccion-soporte ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px 0;
+}
+
+.seccion-soporte li {
+    margin: 3px 0;
+}
+/*scrol asi suave xd*/
+html {
+    scroll-behavior: smooth;
 }
