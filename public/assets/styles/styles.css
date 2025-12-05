@@ -466,3 +466,117 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* ---------- AJUSTES RÁPIDOS PARA MÓVIL ---------- */
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    /* Imágenes grandes de la sección bienvenida */
+    .seccion-bienvenida img {
+        max-width: 55%;    /* prueba 50–60% hasta que te guste */
+        height: auto;
+    }
+
+    /* Por si acaso, evita scroll horizontal feo */
+    body {
+        overflow-x: hidden;
+    }
+    /* Header */
+    .topheader {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 12px;
+    }
+
+    .Menu-horizontal {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .Menu-horizontal li a {
+        font-size: 14px;
+    }
+
+    .topheader .btn-login,
+    .topheader .btn-signup {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    /* Sección bienvenida */
+    .seccion-bienvenida {
+        margin-top: 120px; /* deja espacio para el header más alto */
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 16px;
+    }
+
+    .div-bienvenida-imagen img,
+    .div-bienvenida-imagen2 img {
+        transform: none;
+        max-width: 70%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .div-gral-bienvenida h1 {
+        font-size: 42px;
+    }
+
+    .div-gral-bienvenida h3 {
+        font-size: 20px;
+    }
+
+    /* Sección preguntas */
+    .seccion-preguntas {
+        flex-direction: column;
+        padding: 20px 16px;
+    }
+
+    .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .columna-derecha {
+        padding-top: 0;
+    }
+
+    /* Sección descarga */
+    .seccion-descarga {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 16px 30px 16px;
+    }
+
+    .luchador-container img,
+    .icono-invader img {
+        transform: none;
+        max-width: 60%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    /* Contacto y soporte */
+    .seccion-contactos,
+    .seccion-soporte {
+        padding: 24px 16px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    /* Footer (por si acaso) */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
