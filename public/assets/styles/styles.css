@@ -355,26 +355,36 @@ body {
     background-color: #0a6d60;
 }
 
-.btn-login,
-.btn-signup {
-    margin-left: 0.5rem;
-    padding: 0.4rem 1rem;
-    background-color: #0c8f7b;
+.topheader .btn-login,
+.topheader .btn-signup {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
     color: #fff;
 }
 
-.btn-signup {
-    background-color: #8e44ad;
+
+.topheader .btn-login {
+    margin-left: auto;
+    background-color: #7b2bcb;
 }
 
-.btn-login:hover {
-    background-color: #0a6d60;
+.topheader .btn-login:hover {
+    background-color: #6922b2;
 }
 
-.btn-signup:hover {
-    background-color: #6c3483;
+
+.topheader .btn-signup {
+    background-color: #70d843;
 }
 
+.topheader .btn-signup:hover {
+    background-color: #5bb336;
+}
 .auth-helper {
     margin-top: 1rem;
     font-size: 0.9rem;
